@@ -1,10 +1,7 @@
+#load libraries
 library(tidyverse)
-library(readxl)
-library(dplyr)
-library(data.table)
 library(tidycensus)
-library(RSocrata)
-library(formattable)
+library(tigris)
 
 census_api_key('e598bc95dd62b82fa87e928529f2f6072c7dfa3e', overwrite = T, install = T)
 acsvars <- load_variables(2015, "acs5", cache = TRUE)
@@ -81,5 +78,3 @@ mdacs <- get_acs(geography = "tract",
 ##The result of this is a table of every census tract with the population by age. 
 ##You could easily do a similar analysis of population demographics, poverty rate, 
 ##or any other factor you're hoping to analyze. 
-
-csr <- read.csv('https://opendata.arcgis.com/datasets/bb9f48a42f0e452fac2833a210a02e14_0.csv')
