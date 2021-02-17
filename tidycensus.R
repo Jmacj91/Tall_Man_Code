@@ -157,7 +157,7 @@ fp_cv_tract %>%
 # if you are on a shared computer, use censusapi::getcensus key argument instead
 
 # add key to .Renviron, only need to do once
-Sys.setenv(CENSUS_KEY="e598bc95dd62b82fa87e928529f2f6072c7dfa3e")
+Sys.setenv(CENSUS_KEY="Your Key Here")
 # Reload .Renviron
 readRenviron("~/.Renviron")
 # Check to see that the expected key is output in your R console

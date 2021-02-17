@@ -3,7 +3,7 @@ library(tidyverse)
 library(tidycensus)
 library(tigris)
 
-census_api_key('e598bc95dd62b82fa87e928529f2f6072c7dfa3e', overwrite = T, install = T)
+census_api_key(Your_Key_Goes_Here, overwrite = T, install = T)
 acsvars <- load_variables(2015, "acs5", cache = TRUE)
 
 #Selecting the codes for all age ranges by sex from the acsvars dataset
